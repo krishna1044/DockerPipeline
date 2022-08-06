@@ -41,7 +41,7 @@ node {
         sh """
            kubectl get pods
            kubectl delete deployment kubernetes-bootcamp | true
-           kubectl create deployment kubernetes-bootcamp --image=docker.io/krishna1044/docker-pipeline --port=8090
+           kubectl create deployment kubernetes-bootcamp --image=docker.io/firstdocker2022/docker-pipeline --port=8090
            kubectl get pods
         """
     }
