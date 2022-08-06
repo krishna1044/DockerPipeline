@@ -1,6 +1,7 @@
 def containerName="docker-pipeline"
 def tag="latest"
-def dockerHubUser="anujsharma1990"
+/*def dockerHubUser="anujsharma1990" */
+def dockerHubUser="Krish7991"
 def httpPort="8090"
 
 node {
