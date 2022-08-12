@@ -1,7 +1,7 @@
 def containerName="docker-pipeline"
 def tag="latest"
 /*def dockerHubUser="anujsharma1990" */
-def dockerHubUser="krishnakanth.anasala@gmail.com"
+def dockerHubUser="krishna7991"
 def httpPort="8090"
 
 node {
@@ -41,7 +41,7 @@ node {
         sh """
            kubectl get pods
            kubectl delete deployment kubernetes-bootcamp | true
-           kubectl create deployment kubernetes-bootcamp --image=docker.io/krishnakanth.anasala@gmail.com/docker-pipeline --port=8090
+           kubectl create deployment kubernetes-bootcamp --image=docker.io/krishna7991/docker-pipeline --port=8090
            kubectl get pods
         """
     }
